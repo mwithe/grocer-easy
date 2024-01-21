@@ -1,7 +1,7 @@
 # Grocer-easy: Shopping list generator and nutritional calculator
 Application that displayed a list of recipes from an API, which users could add/remove all the ingredients of a meal to a shopping list with a single click. The items in the shopping list had their nutritional values (calories, protein, fat etc.) retrieved from a second API. The application generated warnings based on high levels of sodium, cholesterol and sugar in the users shopping list.
 
-The application was deployed to AWS through a Docker container.
+The application was deployed to AWS through a Docker container. The application had a page counter that was stored and incrimented through an AWS S3 Bucket.
 
 **Unfortunately, the application is no longer functioning without refactoring due to a loss of AWS credentials.**
 
