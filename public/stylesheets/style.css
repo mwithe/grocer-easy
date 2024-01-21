@@ -1,0 +1,116 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  width: 50%;
+  margin: auto;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.title {
+  margin-left: 10%;
+}
+
+/* Recipe Cards styling */
+.recipes-cards {
+  display: grid;
+  align-content: start;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  height: 425px;
+  max-height: 425px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+}
+
+.recipe-name, .product-category, .recipe-calories {
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+.recipe-image {
+  width: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Button styling */
+.add {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: auto;
+  background-color: #b3b3b3;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  transition-duration: 0.4s;
+}
+
+.add:hover {
+  background-color: #39c457;
+  color: white;
+}
+
+/* Shopping List styling */
+.shopping-list-and-info {
+  margin-left: 10%;
+}
+
+.list-location {
+  background-color: rgb(235, 235, 235);
+  width: auto;
+  height: 700px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Warnings Styling */
+.sodium-warning-row, .cholesterol-warning-row, .sugar-warning-row {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6ffa9;
+  border-radius: 10px;
+  margin: 25px;
+}
+
+.remove-warning-btn {
+  display: block;
+  width: 50%;
+  padding: 5px;
+  margin-top: auto;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px auto;
+}
+
+/* Information not displayed */
+.nutrition-list {
+  display: none;
+
+}
+
+.recipe-legend {
+  display: none;
+}
+
+.recipe-list {
+  display: none;
+}

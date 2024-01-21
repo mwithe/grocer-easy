@@ -1,0 +1,75 @@
+<div class="container">
+    <div>
+        <h2>Popular Recipes</h2>
+    </div>
+
+    <div class="title">
+        <h2>Shopping List</h2>
+    </div>
+
+    <div class="recipes-cards">
+        {{#each data.formattedMeals}}
+        {{!-- Creates the recipe card structure and populates --}}
+            <div class="recipe-card">
+                <img class = 'recipe-image' src="{{image}}" alt="recipe image"/>
+                <h3 class="recipe-name">{{name}}</h3>
+                <p class="product-category">Category: {{category}}</p>
+                <p class="recipe-calories">Calories per serve: {{nutrients.calories}}</p>
+
+        {{!-- Creates variables populated with the nutrition information, but not displayed, just used.     --}}
+                <ul class='recipe-list'>
+                    {{#each recipes}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+
+                <div class="nutrition-list">
+                    <ul class="recipe-nutrients">
+                        {{#each nutrients}}
+                            <li class="{{@key}}">{{this}}</li>
+                        {{/each}}
+                    </ul>
+
+                    <ul class="recipe-legend">
+                        {{#each nutrients}}
+                            <li>{{@key}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+
+                <button class="add">Add to Shopping List</button>
+            </div>
+        {{/each}}
+    </div>
+
+<div class="shopping-list-and-info">
+    {{!-- Div to be populated with list items. --}}
+    <div class="list-location">
+
+    </div>
+
+{{!-- Total nutrients and information based on items added to the cart --}}
+    <div class="totals-section">
+        <h3 class="cart-total">MACRONUTRIENTS</h3>
+        <p class="total-calories">Daily Calories: 0 cal</p>
+        <p class="total-protein">Daily Protein: 0g</p>
+        <p class="total-carbohydrates">Daily Carbohydrates: 0g</p>
+        <p class="total-fat">Daily Fat: 0g</p>
+    </div>
+
+    <div class="total-nutrients">
+        <h3>HEALTH REPORT</h3>
+        <p class="total-saturated-fat">Daily Saturated Fat: 0g</p>
+        <p class="total-sugar">Daily Sugar: 0g</p>
+        <p class="total-fibre">Daily Fibre: 0g</p>
+        <p class="total-sodium">Daily Sodium: 0mg</p>
+        <p class="total-cholesterol">Daily Cholesterol: 0mg</p>
+    </div>
+
+{{!-- Div to be populated with recommendations generated from cart.js --}}
+        <div class="recommendations">
+            
+        </div>
+    </div>
+</div>
+
