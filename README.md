@@ -3,7 +3,7 @@ Application that displayed a list of recipes from an API, which users could add/
 
 The application was deployed to AWS through a Docker container. The application had a page counter that was stored and incrimented through an AWS S3 Bucket.
 
-**Unfortunately, the application is no longer functioning without refactoring due to a loss of AWS credentials.**
+**Unfortunately, the application is no longer functioning without refactoring due to AWS credentials no longer available.**
 
 ### Original Instructions
 1. Connect to an AWS ec2 instance
